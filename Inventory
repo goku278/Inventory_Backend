@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "0bcce143-118c-4239-810c-91c5189abe8d",
+		"name": "Example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Items",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itemName\" : \"Cake\",\r\n    \"itemDescription\" : \"Cake is a food made from creams and flour!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/item/save"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/api/item/fetchAllItems"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Items By Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/api/item/Cake"
+			},
+			"response": []
+		}
+	]
+}
